@@ -68,3 +68,4 @@ The server has the following endpoints:
   - In order to successfully retrieve proposals a x-auth-token header must be supplied with a valid token
   - /api/proposals
   
+For further information read the comments in the project files.
