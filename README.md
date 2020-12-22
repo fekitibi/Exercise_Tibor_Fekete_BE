@@ -1,6 +1,6 @@
 # Exercise_Tibor_Fekete_BE
 
-For this exercise I used express framework with mongoDb. To access and modify the database I used the mongoose library. For security reasons password hashing and json web token libraries were added to the project. The config library was used to look up the json web token secret in the environment variable. Joi was used to validate the incoming data, but since endpoints has not been created for every model, not every model has completely finished validation method.
+For this exercise I used the express framework with mongoDb. To access and modify the database I used the mongoose library. For security reasons password hashing and json web token libraries were added to the project. The config library was used to look up the json web token secret in the environment variable. Joi was used to validate the incoming data, but since endpoints have not been created for every model, not every model has a fully implemented validation method.
 
 To run the project:
 - Run the mongoDb on the localhost:27017
@@ -29,7 +29,7 @@ node index.js
 
 The server will listen to port 3000 on the local host, if the PORT environment variable is not set.
 The server has the following endpoints:
-- Auth is for authenticationg already registered users
+- Auth is for authenticating already registered users
   - /api/auth
   - this endpoint is looking for a valid email address and a password in the body
   ```
