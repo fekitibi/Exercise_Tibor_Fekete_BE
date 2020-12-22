@@ -27,7 +27,7 @@ node seedDb.js
 node index.js
 ```
 
-The server will listen to port 3000 on the local host, if the PORT environment variable is not set.
+The server will listen to port 3000 on the localhost if the PORT environment variable is not set.
 The server has the following endpoints:
 - Auth is for authenticating already registered users
   - /api/auth
@@ -38,10 +38,10 @@ The server has the following endpoints:
     "password":"12345"
   }
   ```
-  - If the validation is successful it returns a access token
+  - If the validation is successful it returns an access token
 - User is for user registration
   - /api/user
-   - this endpoint is looking for a valid name, email address, password, phone number(optional), address, zip code and city in the body
+   - this endpoint is looking for a valid name, email address, password, phone number(optional), address, zip code, and city in the body
   ```
   {
     "name":"name",
@@ -53,7 +53,7 @@ The server has the following endpoints:
     "city": "city name"
   }
   ```
-  - If the validation is successful it returns the userid, name and email address
+  - If the validation is successful it returns the user-id, name, and email address
 - User role endpoint is for admins to add new user roles
   - /api/user_roles
   - this endpoint is expecting a valid unique role name
@@ -62,10 +62,10 @@ The server has the following endpoints:
     "role":"newrole"
   }
   ```
-  - If the request is successful it returns the roleid and name
+  - If the request is successful it returns the role-id and name
 - The proposals endpoint returns all the available proposals for the user
   - Check the implementation and my comments on it in the proposals.js
-  - In order to successfully retrieve proposals a x-auth-token header must be supplied with a valid token
+  - To successfully retrieve proposals a x-auth-token header must be supplied with a valid token
   - /api/proposals
   
 For further information read the comments in the project files.
