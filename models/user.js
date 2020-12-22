@@ -71,7 +71,7 @@ const User = mongoose.model('User', userSchema);
 function validateUser(user) {
   const schema = {
     active: Joi.boolean(),
-    profile_pic: Joi.string().required(),
+    profile_pic: Joi.string(),
     name: Joi.string().min(5).max(50).required(),
     email: Joi.string().min(5).max(255).required().email(),
     user_role_id: Joi.string(),

@@ -8,6 +8,7 @@ const express = require('express');
 const router = express.Router();
 
 // This endpoint is for admins to create new user roles
+// Here user role update and delete user role endpoints could be potentially implemented with the correct authorization
 router.post('/', [auth, admin_auth], async (req, res) => {
     const { error } = validate(req.body); 
     if (error) return res.status(400).send(error.details[0].message);

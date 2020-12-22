@@ -34,16 +34,3 @@ function validate(req) {
   }
 
 module.exports = router;
-
-//const {Accesstoken} = require('../models/accesstoken');
-    //Normally I am not storing the access token, but I might do it here after I hash it inside the log in method. 
-    // I thought the accesstoken is something like the jsonwebtoken
-    //const salt = await bcrypt.genSalt(10);
-    //const hashedToken = await bcrypt.hash(token, salt);
-    /*const accesstoken = new Accesstoken({
-      _id: hashedToken,
-      tll://set time to live here,
-      //set date here
-    })
-    
-    */
